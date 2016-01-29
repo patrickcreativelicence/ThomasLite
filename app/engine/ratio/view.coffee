@@ -39,6 +39,7 @@ class RatioView extends SlideView
       @draggies[i] = draggy
 
   onDrag: (draggy, isInitial) ->
+    console.log('draggin')
     @setState("touched")
 
     if @options.data.ratio.quantity == 1
